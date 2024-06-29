@@ -27,6 +27,8 @@ const init = async () => {
             errorResponse.code(500);
             return errorResponse;
         }
+
+        return h.continue;
     })
 
     await server.start();
